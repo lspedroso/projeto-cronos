@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cronos</title>
+</head>
+<body >
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="imagens/WhatsApp_Image_2025-09-05_at_21.24.20-removebg-preview (1).png"
+            alt="Logo Cronos">
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul>
+         <br>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="agendamento.php">Agendamento</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+            <li><a href="team.html">Team</a></li>
+        </ul>
+    </nav>
+    <main class="menu-page">
+        <div class="menu-container">
+            <div class="menu-card">
+                <img src="Imagens/pc2 - Copia.png" alt="Item 1">
+                <h2>Laboratórios</h2>
+                <p>Garanta seu horário nos laboratórios de forma prática e organizada. O agendamento permite que alunos e professores utilizem os equipamentos de forma segura, planejando experimentos e atividades práticas sem conflitos de horários.</p>
+            </div>
+
+            <div class="menu-card">
+                <img src="Imagens/biblioteca - Copia.png" alt="Item 2">
+                <h2>Biblioteca</h2>
+                <p>Agende sua visita à biblioteca para estudar ou pesquisar em um ambiente tranquilo e organizado. Com horários previamente marcados, garantimos que todos tenham espaço adequado e silencioso para leitura, estudo individual ou trabalhos em grupo.</p>
+            </div>
+
+            <div class="menu-card">
+                <img src="Imagens/camera - Copia.png" alt="Item 3">
+                <h2>Auditório</h2>
+                <p>Reserve o auditório para palestras, apresentações ou reuniões especiais. O agendamento garante que o espaço esteja disponível na hora marcada, com toda a infraestrutura necessária para eventos bem-sucedidos.</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".navbar ul").classList.toggle("show");
+        }
+        document.querySelector(".navbar ul li a").forEach(link => {
+            link.addEventListener("click", () => {
+                document.querySelector(".navbar ul").classList.remove("show");
+            });
+        });
+    </script>
+
+
+</body>
+</html>    

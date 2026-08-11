@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cronos</title>
+</head>
+<body>
+    <div class="texto">
+
+        <h1>Cronos</h1>
+    <p>O futuro da organização de horários.</p>
+    <a href="saibamais.html">
+            <button>Saiba mais</button>
+    </a>
+    </div>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="imagens/WhatsApp_Image_2025-09-05_at_21.24.20-removebg-preview (1).png"
+                 alt="Logo Cronos">
+        </a>
+         <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul>
+                <br>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="agendamento.php">Agendamento</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+    </nav>
+    <div class="imagem">
+        <img src="imagens/WhatsApp_Image_2025-09-06_at_12.28.19-removebg-preview.png" alt="Imagem decorativa" class="centralizada">
+    </div>
+    <section class="video-section">
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="videos/7AE022F2-2529-43ef-ACED-B577CB98F7D8_video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".navbar ul").classList.toggle("show");
+        }
+        document.querySelector(".navbar ul li a").forEach(link => {
+            link.addEventListener("click", () => {
+                document.querySelector(".navbar ul").classList.remove("show");
+            });
+        });
+    </script>
+
+    
+</body>
+</html>

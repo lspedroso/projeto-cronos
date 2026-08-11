@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cronos</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="imagens/WhatsApp_Image_2025-09-05_at_21.24.20-removebg-preview (1).png"
+                 alt="Logo Cronos">
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul>
+                <br>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="agendamento.php">Agendamento</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+    </nav>
+    <div class="card3">
+        <h1>Sobre o Cronos</h1>
+    </div>
+    <div class="cards-wrapper">
+        <div class="cards-row">
+            <div class="cards-esquerda">
+                <div class="card card4">
+                    <h3 class="card-title"><span style="color: #6328A1;">Nossa equipe</span></h3>
+                    <p class="card-text">O projeto é resultado da união de habilidades em programação, design, comunicação e infraestrutura.</p>
+                    <div class="icons-equipe">
+                        <img src="imagens/programação.png" alt="Programação" class="icon-equipe">
+                        <img src="imagens/equipe.png" alt="Design" class="icon-equipe">
+                        <img src="imagens/comunicação.png" alt="Comunicação" class="icon-equipe">
+                        <img src="imagens/infraestrutura.png" alt="Infraestrutura" class="icon-equipe">
+                    </div>
+                </div>
+                <div class="card card5">
+                    <h3 class="card-title"><span style="color: #6328A1;">Por que escolher o Cronos?</span></h3>
+                    <ul>
+                        <li>Evita conflitos de horários</li>
+                        <li>Otimiza espaços</li>
+                        <li>Fácil de usar</li>
+                        <li>Aumenta a produtividade</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-cards-direita">
+                <div class="card card6">
+                    <h3 class="card-title"><span style="color: #6328A1;">O projeto</span></h3>
+                    <p class="card-text">O Cronos nasceu com o propósito de oferecer um sistema de agendamento eficiente, moderno e acessível. Seu desenvolvimento foi construído com base na colaboração.</p>
+                </div>
+                <div class="card card7">
+                    <h3 class="card-title"><span style="color: #6328A1;">Nossos valores</span></h3>
+                    <ul>
+                        <li>Inovação</li>
+                        <li>Colaboração</li>
+                        <li>Eficiência</li>
+                        <li>Acessibilidade</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".navbar ul").classList.toggle("show");
+        }
+        document.querySelectorAll(".navbar ul li a").forEach(link => {
+            link.addEventListener("click", () => {
+                document.querySelector(".navbar ul").classList.remove("show");
+            });
+        });
+    </script>    
+</body>
+</html>    
